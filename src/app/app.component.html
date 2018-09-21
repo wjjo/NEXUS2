@@ -1,0 +1,12 @@
+<div class="d-flex vdivide" style="height: 100%">
+  <div id="body-left-side">
+    <div class="flex-top">
+      <router-outlet class="top-contents" (activate)='onActivate($event)' (deactivate)='onDeactivate($event)'></router-outlet>
+    </div>
+    <div class="flex-body">
+      <app-page-footer (expand)="$event ? expand() : collapse()" class="page-footer"></app-page-footer>
+    </div>
+  </div>
+  <div id="body-right-side" *ngIf="isExpand">
+  </div>
+</div>

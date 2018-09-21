@@ -1,0 +1,40 @@
+.btn-next {
+  --btn-color: 230, 108, 57;
+  --btn-color-disabled: 128, 128, 128;
+
+  position: absolute;
+  bottom: 10%;
+
+  min-width: 120px;
+
+  border-color: rgba(var(--btn-color), 1);
+  background: rgba(var(--btn-color), 1);
+  border: 0!important;
+}
+
+// Hover : 16% Overlay
+.btn-next:hover {
+  opacity: 0.76;
+  border: 0!important;
+}
+
+.btn-next:active {
+  // Focused : 32% Overlay
+  background: rgba(var(--btn-color), 1)!important;
+  opacity: 0.73 !important;
+  border: 0!important;
+}
+
+// Focused : 32% Overlay
+.btn-next:focus {
+  // Focused : 32% Overlay
+  background: rgba(var(--btn-color), 1)!important;
+  opacity: 0.73 !important;
+  border: 0!important;
+}
+
+// Disable : 36% Opacity, No Overlay
+.btn-next:disabled {
+  // color: var(--btn-color-disabled);
+  opacity: 0.36;
+}
